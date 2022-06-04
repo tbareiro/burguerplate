@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+main{
+    margin: 10px;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    border-bottom: solid 2px red;
+}
+
+.logo{
+    width: 8vw;
+}
+
+nav{
+    align-self: end;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li{
+    padding: 4px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    margin: 2px;
+}
+
+nav li a{
+    padding: 0.4em;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+nav li a:hover{
+    background-color: red;
+    color: white;
+    border-top: 2px white solid;
+}
+
+.hide{
+    display: hidden;
+    width: 8vw;
+}
+
+strong{
+    color: white;
+    padding: 8px;
+    background-color: red;
+    border-top: solid 2px white;
+    font-weight: bolder;
+}
+
+.img__bpLogo--size{
+    width: 90%;
+    height: auto;
+    display: block;
+}
+
+h1{
+    display: inline-block;
+    background-color: #1f1f1f;
+    color: white;
+    font-weight: bolder;
+    margin-left: 2em;
+    margin-bottom: 3px;
+    padding: 8px;
+    border: 3px solid red;
+}
+
+.formulario{
+    padding: 6px;
+}
+
+form{
+    width: 38%;
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    padding: 0.4em;
+}
+
+label{
+    padding: 3px;
+}
+
+select{
+    padding: 3px;
+    display: inline;
+}
+
+option{
+    padding: 3px;
+}
+
+input{
+    margin: 2px;
+}
+
+form p{
+    display: inline;
+}
+
+iframe{
+    margin-left: 0.5em;
+}
+
+
+footer{
+    display: block;
+    background-color: #1f1f1f;
+    color: #8B8B8A;
+    bottom: 0px;
+    width: 100%;
+    min-height: 100%;
+}
+
+footer p{
+    display: inline;
+}
+
+.footer__logo--size{
+    display: inline-block;
+    width: 50px;
+    height: auto;
+    padding: 2px;
+    margin: 2px;
+}

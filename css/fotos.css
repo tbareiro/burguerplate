@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+main{
+    margin: 10px;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    border-bottom: solid 2px red;
+}
+
+.logo{
+    width: 8vw;
+}
+
+nav{
+    align-self: end;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li{
+    padding: 4px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    margin: 2px;
+}
+
+nav li a{
+    padding: 0.4em;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+nav li a:hover{
+    background-color: red;
+    color: white;
+    border-top: 2px white solid;
+}
+
+.hide{
+    display: hidden;
+    width: 8vw;
+}
+
+strong{
+    color: white;
+    padding: 8px;
+    background-color: red;
+    border-top: solid 2px white;
+    font-weight: bolder;
+}
+
+body{
+    width: 100%;
+}
+
+div.gallery{
+    background-color: #222;
+    border: solid 3px #F6CB1E;
+}
+
+div.gallery img{
+    display: inline;
+    width: 40%;
+    margin: 1em;
+    height: auto;
+    border: solid 2px #F6CB1E;
+}
+
+footer{
+    display: block;
+    background-color: #1f1f1f;
+    color: #8B8B8A;
+    bottom: 0px;
+    width: 100%;
+    min-height: 100%;
+}
+
+footer p{
+    display: inline;
+}
+
+.footer__logo--size{
+    display: inline-block;
+    width: 50px;
+    height: auto;
+    padding: 2px;
+    margin: 2px;
+}
