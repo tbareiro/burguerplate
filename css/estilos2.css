@@ -1,9 +1,12 @@
-.logo{
-    width: 100%;
+.img-max {
+    max-width: 100px;
+    width:100%;
+  }
+
+.fondo{
+    width: 90vw;
 }
 
-.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-  }
+.bpLogo{
+    width: 100%;
+}
