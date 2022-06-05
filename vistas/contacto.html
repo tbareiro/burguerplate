@@ -29,8 +29,8 @@
     </header>
       <main>
         <img src="../assets/bpLogo.png" alt="logo" class="img__bpLogo--size">
-        <h1>CONTACTO</h1>
-        <section class="formulario">
+        <h1 data-aos="fade-right">CONTACTO</h1>
+        <section data-aos="fade-right" class="formulario">
             <form method="get">
               <div>
                 <label for="name">Nombre <input type="text" name="name"></label>
@@ -60,21 +60,32 @@
               </div>
             </form>
         </section>
-        <section>
+        <section data-aos="fade-right">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9295.111848656532!2d-58.450671844764585!3d-34.545495180850445!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3d7f60a75bfa308a!2sEstadio%20Monumental%20Antonio%20Vespucio%20Liberti!5e0!3m2!1ses!2sar!4v1652932733876!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
         </section>
       </main>
       <footer>
-        <p>Copyright© 2022</p>
-        <img src="../assets/visa.png" alt="visa" class="footer__logo--size">
-        <img src="../assets/mastercard.png" alt="mastercard" class="footer__logo--size">
-        <img src="../assets/amex.png" alt="american express" class="footer__logo--size">
-        <a href="https://www.instagram.com"><img src="../assets/instagram.png" alt="instagram" class="footer__logo--size"></a>
-        <a href="https://www.facebook.com"><img src="../assets/facebook.png" alt="facebook" class="footer__logo--size"></a>
-        <a href="https://web.whatsapp.com"><img src="../assets/whatsapp.png" alt="whatsapp" class="footer__logo--size"></a>
+        <p class="copyright">Copyright© 2022</p>
+        <div class="pagos">
+          <img src="../assets/visa.png" alt="visa" class="footer__logoPagos--size">
+          <img src="../assets/mastercard.png" alt="mastercard" class="footer__logoPagos--size">
+          <img src="../assets/amex.png" alt="american express" class="footer__logoPagos--size">
+        </div>
+        <div class="redes">
+          <a href="https://www.instagram.com" class="instagram"><img src="../assets/instagram.png" alt="instagram" class="footer__logoRedes--size"></a>
+          <a href="https://www.facebook.com" class="facebook"><img src="../assets/facebook.png" alt="facebook" class="footer__logoRedes--size"></a>
+          <a href="https://web.whatsapp.com" class="whatsapp"><img src="../assets/whatsapp.png" alt="whatsapp" class="footer__logoRedes--size"></a>
+          <img src="../assets/phone.png" alt="telefono" class="footer__logoRedes--size" id="phone">
+          <p class="numero">11-2222-3333</p>
+        </div>
     </footer>
   </body>
   <script>
-    AOS.init();
+    AOS.init(
+      {
+        duration: 1000,
+        once: true,
+      }
+    );
   </script>
 </html>

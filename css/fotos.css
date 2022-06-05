@@ -20,6 +20,11 @@ header{
 
 .logo{
     width: 8vw;
+    transition: width 1s;
+}
+
+.logo:hover{
+    width: 9vw;
 }
 
 nav{
@@ -80,25 +85,96 @@ div.gallery img{
     margin: 1em;
     height: auto;
     border: solid 2px #F6CB1E;
+    filter: grayscale(1);
+    transition: width 1s;
+}
+
+.gallery img:hover{
+    width: 45%;
+    filter: grayscale(0);
 }
 
 footer{
-    display: block;
-    background-color: #1f1f1f;
-    color: #8B8B8A;
-    bottom: 0px;
     width: 100%;
-    min-height: 100%;
+    background-color: #222;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "p pagos redes";
+    height: 9em;
 }
 
-footer p{
-    display: inline;
+.copyright{
+    font-weight: bolder;
+    margin: 4px;
+    color: rgb(196, 193, 193);
+}
+.pagos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 0.7em;
 }
 
-.footer__logo--size{
-    display: inline-block;
-    width: 50px;
-    height: auto;
-    padding: 2px;
-    margin: 2px;
+.pagos img{
+    margin: 10px;
+}
+
+.redes{
+    width: 80%;
+    height: 90%;
+    background-color: white;
+    border: solid 3px #990000;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas: "ig fb wpp"
+    "phone numero numero";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-self: center;
+    justify-self: center;
+}
+
+.redes img{
+    margin-top: 4px;
+    align-self: center;
+    justify-self: center;
+}
+
+.redes a{
+    align-self: center;
+    justify-self: center;
+}
+
+.facebook{
+    grid-area: fb;
+}
+
+.whatsapp{
+    grid-area: wpp;
+}
+
+.instagram{
+    grid-area: ig;
+}
+
+.numero{
+    grid-area: numero;
+    justify-self: start;
+    align-self: center;
+    margin-left: 5px;
+}
+
+#phone{
+    grid-area: phone;
+    justify-self: end;
+    margin-bottom: 0.5em;
+}
+
+img.footer__logoRedes--size{
+    width: 3em;
+}
+
+
+img.footer__logoPagos--size{
+    width: 3em;
 }

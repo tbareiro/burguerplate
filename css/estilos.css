@@ -25,6 +25,11 @@ header{
 
 .logo{
     width: 8vw;
+    transition: width 1s;
+}
+
+.logo:hover{
+    width: 9vw;
 }
 
 nav{
@@ -80,6 +85,7 @@ section.welcome{
     padding: 0px 2vw 0px 2vw;
     justify-content: center;
     align-items: center;
+    animation-iteration-count: 1;
 }
 
 .welcome__img{
@@ -130,6 +136,7 @@ section.welcome{
     border: red 2px solid;
     color: white;
     margin-top: 1.5em;
+    animation-iteration-count: 1;
 }
 
 .contenedor__contacto{
@@ -145,6 +152,7 @@ section.welcome{
     border: red 2px solid;
     color: white;
     margin: 1em 0px 1em 0px;
+    animation-iteration-count: 1;
 }
 
 .cuadros p{
@@ -165,6 +173,18 @@ section.welcome{
 .cuadros a:hover{
     background-color: #990000;
     color: white;
+    animation-name: temblor;
+    animation-duration: 1s;
+}
+
+@keyframes temblor{
+    0%{transform: translate(0px, 0px);}
+    20%{transform: translate(8px, 0px);}
+    40%{transform: translate(0px, 0px);}
+    60%{transform: translate(8px, 0px);}
+    70%{transform: translate(0px, 0px);}
+    80%{transform: translate(8px, 0px);}
+    100%{transform: translate(0px, 0px);}
 }
 
 /*Footer*/
