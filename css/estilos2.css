@@ -1,12 +1,18 @@
-.img-max {
+.img-max{
     max-width: 100px;
-    width:100%;
-  }
-
-.fondo{
-    width: 90vw;
 }
 
-.bpLogo{
-    width: 100%;
+.copyright{
+    font-weight: bolder;
+    margin: 4px;
+    color: rgb(196, 193, 193);
+}
+
+img.footer__logoRedes--size{
+    width: 3em;
+}
+
+
+img.footer__logoPagos--size{
+    width: 3em;
 }
