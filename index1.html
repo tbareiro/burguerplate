@@ -14,8 +14,8 @@
 </head>
 <body>
     <header>
-      <nav class="navbar navbar-expand-sm bg-light">
-        <div class="container-fluid justify-content-between">
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid justify-content-between align-items-end">
           <a class="navbar-brand" href="#"><img src="./assets/logo.png" class="img-max" alt="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,13 +24,19 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
+                  <a class="nav-link" href="#">Fotos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -72,20 +78,17 @@
       <div class="container-fluid">
         <div class="row justify-content-between">
           <p class="copyright col-3">Copyright© 2022</p>
-          <div class="pagos col-3 justify-content-center">
+          <div class="pagos col-3 d-flex justify-content-center align-items-center">
             <img src="./assets/visa.png" alt="visa" class="footer__logoPagos--size">
             <img src="./assets/mastercard.png" alt="mastercard" class="footer__logoPagos--size">
             <img src="./assets/amex.png" alt="american express" class="footer__logoPagos--size">
           </div>
-          <div class="redes col-3 d-flex flex-row justify-content-around">
+          <div class="redes col-3 d-flex flex-row align-items-center">
             <a href="https://www.instagram.com" class="instagram"><img src="./assets/instagram.png" alt="instagram" class="footer__logoRedes--size"></a>
             <a href="https://www.facebook.com" class="facebook"><img src="./assets/facebook.png" alt="facebook" class="footer__logoRedes--size"></a>
             <a href="https://web.whatsapp.com" class="whatsapp"><img src="./assets/whatsapp.png" alt="whatsapp" class="footer__logoRedes--size"></a>
-            <div>
-              <img src="./assets/phone.png" alt="telefono" class="footer__logoRedes--size" id="phone">
-              <p class="numero d-inline">11-2222-3333</p>
-            </div>
-          </div>
+            <p class="numero align-self-end"><img src="./assets/phone.png" alt="telefono" class="footer__logoRedes--size" id="phone">11-2222-3333</p>
+        </div>
         </div>
       </div>
     </footer>
