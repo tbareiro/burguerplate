@@ -6,70 +6,38 @@
 }
 
 /* Body Grid */
-
-.grid{
-    width: 100vw;
-    height: 95vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-
-/* Header */
-
 header{
-    display: flex;
-    justify-content: space-between;
     background-color: #222;
     border-bottom: solid 2px red;
 }
 
 .logo{
-    width: 8vw;
+    width: 100px;  
     transition: width 1s;
 }
 
 .logo:hover{
-    width: 9vw;
+    width: 120px;
 }
 
-nav{
-    align-self: end;
-}
-
-nav ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-}
-
-nav ul li{
-    padding: 4px;
-    border-left: solid 1px;
-    border-right: solid 1px;
-    margin: 2px;
-}
-
-nav li a{
-    padding: 0.4em;
-    text-decoration: none;
+.nav-link{
     color: white;
     font-weight: bolder;
 }
 
-nav li a:hover{
+.nav-link:hover{
     background-color: red;
     color: white;
-    border-top: 2px white solid;
+    border-top: 3px white solid;
 }
 
-.hide{
-    display: hidden;
-    width: 8vw;
+.navbar{
+    --bs-navbar-padding-y: 0;
 }
 
-strong{
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
     color: white;
-    padding: 8px;
+    padding: 0.5em;
     background-color: red;
     border-top: solid 2px white;
     font-weight: bolder;
@@ -77,49 +45,17 @@ strong{
 
 /* Main */
 
-.main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-}
-
-.parrafo{
-    width: 90vw;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 0.6em;
-}
-
 .messiB__img{
-    width: 40vw;
-    grid-row: 1/3;
-    grid-column: 1;
-    margin: 10px;
-    border-radius: 20px;
+    border-radius: 15px;
+    border: gold 3px solid;
 }
 
-.bpFondo{
-    width: 90%;
-    height: auto;
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.messiB__p{
-    grid-row: 2;
-    grid-column: 2;
-    font-size: 1.2em;
+.us{
+    margin: 1em 0px;
 }
 
 .burguerMessi{
-    display: flex;
-    width: 55vw;
-    flex-direction: row nowrap;
-    align-items: center;
-    justify-content: space-around;
-    margin: 1em;
+    margin: 1em 0px 1em;
     padding: 0.8em;
     background-color: #222;
     border: red solid 3px;
@@ -155,12 +91,37 @@ strong{
 /*Footer*/
 
 footer{
-    width: 100%;
     background-color: #222;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: "p pagos redes";
-    height: 9em;
+}
+
+.redes a{
+    width: auto;
+    background-color: white;
+    border: solid 3px #990000;
+    border-radius: 20px;
+    margin: 4px;
+}
+
+.redes a:hover{
+    background-color: #990000;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.numero{
+    width: auto;
+    background-color: white;
+    border: solid 3px #990000;
+    border-radius: 20px;
+    margin: 4px;
+    padding-right: 0.8em;
+}
+
+.numero:hover{
+    background-color: #990000;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
 }
 
 .copyright{
@@ -168,243 +129,14 @@ footer{
     margin: 4px;
     color: rgb(196, 193, 193);
 }
-.pagos{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 0.7em;
-}
-
-.pagos img{
-    margin: 10px;
-}
-
-.redes{
-    width: 80%;
-    height: 90%;
-    background-color: white;
-    border: solid 3px #990000;
-    border-radius: 10px;
-    display: grid;
-    grid-template-areas: "ig fb wpp"
-    "phone numero numero";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    align-self: center;
-    justify-self: center;
-}
-
-.redes img{
-    margin-top: 4px;
-    align-self: center;
-    justify-self: center;
-}
-
-.redes a{
-    align-self: center;
-    justify-self: center;
-}
-
-.facebook{
-    grid-area: fb;
-}
-
-.whatsapp{
-    grid-area: wpp;
-}
-
-.instagram{
-    grid-area: ig;
-}
-
-.numero{
-    grid-area: numero;
-    justify-self: start;
-    align-self: center;
-    margin-left: 5px;
-}
-
-#phone{
-    grid-area: phone;
-    justify-self: end;
-    margin-bottom: 0.5em;
-}
 
 img.footer__logoRedes--size{
-    width: 3em;
+    width: 2em;
+    margin: 0.5em;
 }
 
 
 img.footer__logoPagos--size{
-    width: 3em;
-}
-
-/*Media Queries*/
-/* 320px — 480px: Mobile devices.
-481px — 768px: iPads, Tablets.
-769px — 1024px: Small screens, laptops.
-1025px — 1200px: Desktops, large screens.
-1201px and more — Extra large screens, TV. */
-
-@media screen and (min-width: 769px) and (max-width: 1024px){
-    body{
-        font-size: 14px;
-    }
-
-    .burguerMessi{
-        flex-direction: column;
-        width: 75vw;
-    }
-
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px){
-    body{
-        font-size: 12px;
-    }
-
-    .burguerMessi{
-        flex-direction: column;
-    }
-
-    .video1{
-        display: none;
-    }
-
-    .link{
-        display: block;
-        align-self: center;
-        margin: 1em;
-    }
-
-    .link a{
-        padding: 0.5em;
-        text-decoration: none;
-        background-color: white;
-        color: black;
-        border: #990000 2px solid;
-        border-radius: 20px;
-    }
-
-    .link a:hover{
-        background-color: gold;
-        color: white;
-    }
-
-    /*Footer*/
-
-    section.welcome{
-        flex-direction: column;
-        align-content: center;
-    }
-
-    .welcome__img{
-        width: 50vw;
-        margin-bottom: 1em;
-    }
-
-    .img__welcome{
-        width: 50vw;
-        border: 2px solid #222;
-    }
-
-    .h1__welcome{
-        width: 48vw;
-        padding: 2px;
-    }
-
-    .cuadros p{
-        font-size: 1.5em;
-        -webkit-text-stroke: 1px brown;
-    }
-
-    img.footer__logo--size{
-        width: 2em;
-    }
-}
-
-@media screen and (min-width:320px) and (max-width: 480px){
-    body{
-        font-size: 10px;
-    }
-    /*tener en cuenta que el nav, será un burguer menu*/
-    nav{
-        display: none;
-    }
-    
-    .parrafo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .bpFondo{
-        order: 1;
-    }
-
-    .messiB__p{
-        order: 2;
-    }
-
-    .messiB__img{
-        order: 3;
-        width: 70vw;
-    }
-
-    .burguerMessi{
-        flex-direction: column;
-    }
-
-    .video1{
-        display: none;
-    }
-
-    .link{
-        display: block;
-        align-self: center;
-        margin: 1em;
-    }
-
-    .link a{
-        padding: 0.5em;
-        text-decoration: none;
-        background-color: white;
-        color: black;
-        border: #990000 2px solid;
-        border-radius: 20px;
-    }
-
-    .link a:hover{
-        background-color: gold;
-        color: white;
-    }
-
-    /*Footer*/
-    img.footer__logo--size{
-        width: 2em;
-    }
-    
-    img.footer__logoRedes--size{
-        width: 1.5em;
-    }
-
-    img.footer__logoPagos--size{
-        width: 3em;
-    }
-
-    .redes{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-content: center;
-    }
-
-    .numero{
-        display: none;
-    }
-
-    #phone{
-        display: none;
-    }
+    width: 4em;
+    margin: 0.5em;
 }
