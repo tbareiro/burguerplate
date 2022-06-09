@@ -65,27 +65,26 @@ section.welcome{
 }
 
 .contenedor__menu{
+    width: auto;
     background-color: #222;
     border-radius: 20px;
     border: red 2px solid;
     color: white;
     margin-top: 1.5em;
-    animation-iteration-count: 1;
 }
 
 .contenedor__contacto{
+    width: auto;
     background-color: #222;
     border-radius: 20px;
     border: red 2px solid;
     color: white;
     margin: 1em 0px 1em 0px;
-    animation-iteration-count: 1;
 }
 
 .cuadros p{
     font-weight: bolder;
     -webkit-text-stroke: 1px RED;
-    font-size: 2em;
     margin-bottom: 0;
     padding: 0.2em;
 }
