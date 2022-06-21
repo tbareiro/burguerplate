@@ -1,0 +1,58 @@
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/colores";
+$rojo: map-get($colores, rojo);
+$bordo: map-get($colores, bordo);
+$blanco: map-get($colores, blanco);
+$dorado: map-get($colores, dorado);
+$gris: map-get($colores, gris);
+$negro: map-get($colores, negro);
+
+.messiB__img{
+    border-radius: 15px;
+    border: $dorado 3px solid;
+}
+
+.us{
+    margin: 1em 0px;
+}
+
+.burguerMessi{
+    margin: 1em 0px 1em;
+    padding: 0.8em;
+    background-color: #222;
+    border: $rojo solid 3px;
+    border-radius: 20px;
+    color: $blanco;
+}
+
+.text{
+    text-align: center;
+
+    & h2{
+        color: $dorado;
+        padding: 5px;
+    }
+
+    & h3{
+        padding: 4px;
+    }
+
+    & p{
+        padding: 3px;
+    }
+}
+
+.video1{
+    padding: 0.6em 0px 0.6em 0px;
+}
+
+.link{
+    display: none;
+}
+
+strong {
+    @extend .nav-link;
+    background-color: $rojo;
+    border-top: 3px $blanco solid;
+}

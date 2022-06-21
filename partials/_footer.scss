@@ -1,0 +1,58 @@
+@import "../partials/colores";
+$rojo: map-get($colores, rojo);
+$bordo: map-get($colores, bordo);
+$blanco: map-get($colores, blanco);
+$dorado: map-get($colores, dorado);
+$gris: map-get($colores, gris);
+$negro: map-get($colores, negro);
+
+footer{
+    background-color: #222;
+
+    .redes a{
+        width: auto;
+        background-color: $blanco;
+        border: solid 3px $bordo;
+        border-radius: 20px;
+        margin: 4px;
+        
+        &:hover{
+            background-color: $bordo;
+            border: 2px solid $blanco;
+            border-radius: 20px;
+        }
+    }
+    
+    .numero{
+        width: auto;
+        background-color: $blanco;
+        border: solid 3px $bordo;
+        border-radius: 20px;
+        margin: 4px;
+        padding-right: 0.8em;
+
+        &:hover{
+            background-color: $bordo;
+            border: 2px solid $blanco;
+            border-radius: 20px;
+            color: $blanco;
+        }
+    }
+    
+    .copyright{
+        font-weight: bolder;
+        margin: 4px;
+        color: rgb(196, 193, 193);
+    }
+    
+    img.footer__logoRedes--size{
+        width: 2em;
+        margin: 0.5em;
+    }
+    
+    
+    img.footer__logoPagos--size{
+        width: 4em;
+        margin: 0.5em;
+    }
+}
