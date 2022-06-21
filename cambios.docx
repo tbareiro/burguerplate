@@ -1,0 +1,7 @@
+1- la carpeta "vistas" se renombra a "pages" para mejorar el root.
+
+2- se cambia titulos de todos los HTML agregando "- Burguer Plate".
+
+3- se agregan etiquetas meta description y meta keywords en todos los HTML.
+
+4- se comprimieron todos las imagenes de la carpeta assets, logrando reducir un 64% el peso total (https://gyazo.com/392c05a2be975279abb228d86dc0ddf6).
