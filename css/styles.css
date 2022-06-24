@@ -16,13 +16,17 @@ header .logo {
 header .logo:hover {
   width: 120px;
 }
-header .nav-link {
+header .nav-link, header strong {
   color: white;
   font-weight: bolder;
 }
-header .nav-link:hover {
+header .nav-link:hover, header strong:hover {
   background-color: red;
   color: white;
+  border-top: 3px white solid;
+}
+header strong {
+  background-color: red;
   border-top: 3px white solid;
 }
 header .navbar {

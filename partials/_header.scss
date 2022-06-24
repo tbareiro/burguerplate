@@ -38,6 +38,12 @@ header{
         }
     }
 
+    strong {
+        @extend .nav-link;
+        background-color: $rojo;
+        border-top: 3px $blanco solid;
+    }
+
 
     .navbar{
         --bs-navbar-padding-y: 0;

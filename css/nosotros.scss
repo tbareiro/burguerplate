@@ -50,9 +50,3 @@ $negro: map-get($colores, negro);
 .link{
     display: none;
 }
-
-strong {
-    @extend .nav-link;
-    background-color: $rojo;
-    border-top: 3px $blanco solid;
-}

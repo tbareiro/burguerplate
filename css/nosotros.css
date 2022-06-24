@@ -25,6 +25,10 @@ header .nav-link:hover, header strong:hover {
   color: white;
   border-top: 3px white solid;
 }
+header strong {
+  background-color: red;
+  border-top: 3px white solid;
+}
 header .navbar {
   --bs-navbar-padding-y: 0;
 }
@@ -110,9 +114,4 @@ footer img.footer__logoPagos--size {
 
 .link {
   display: none;
-}
-
-strong {
-  background-color: red;
-  border-top: 3px white solid;
 }/*# sourceMappingURL=nosotros.css.map */
