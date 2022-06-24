@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #222;
+  border-bottom: solid 2px red;
+}
+header .logo {
+  width: 100px;
+  transition: width 1s;
+}
+header .logo:hover {
+  width: 120px;
+}
+header .nav-link, header strong {
+  color: white;
+  font-weight: bolder;
+}
+header .nav-link:hover, header strong:hover {
+  background-color: red;
+  color: white;
+  border-top: 3px white solid;
+}
+header strong {
+  background-color: red;
+  border-top: 3px white solid;
+}
+header .navbar {
+  --bs-navbar-padding-y: 0;
+}
+
+footer {
+  background-color: #222;
+}
+footer .redes a {
+  width: auto;
+  background-color: white;
+  border: solid 3px #990000;
+  border-radius: 20px;
+  margin: 4px;
+}
+footer .redes a:hover {
+  background-color: #990000;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+footer .numero {
+  width: auto;
+  background-color: white;
+  border: solid 3px #990000;
+  border-radius: 20px;
+  margin: 4px;
+  padding-right: 0.8em;
+}
+footer .numero:hover {
+  background-color: #990000;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+}
+footer .copyright {
+  font-weight: bolder;
+  margin: 4px;
+  color: rgb(196, 193, 193);
+}
+footer img.footer__logoRedes--size {
+  width: 2em;
+  margin: 0.5em;
+}
+footer img.footer__logoPagos--size {
+  width: 4em;
+  margin: 0.5em;
+}
+
+section.welcome {
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.welcome__img {
+  position: relative;
+}
+
+.h1__welcome {
+  position: absolute;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2em;
+  left: 0.7em;
+  color: white;
+  -webkit-text-stroke: 1px #222;
+}
+
+.img__welcome {
+  border-radius: 20px;
+}
+
+.cuadros {
+  width: 40vw;
+}
+.cuadros p {
+  font-weight: bolder;
+  -webkit-text-stroke: 1px red;
+  margin-bottom: 0;
+  padding: 0.2em;
+}
+.cuadros a {
+  text-decoration: none;
+  background-color: white;
+  border: solid 2px #990000;
+  color: #990000;
+  padding: 8px;
+  border-radius: 20px;
+}
+.cuadros a:hover {
+  background-color: #990000;
+  color: white;
+  -webkit-animation-name: temblor;
+          animation-name: temblor;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+@-webkit-keyframes temblor {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(8px, 0px);
+  }
+  40% {
+    transform: translate(0px, 0px);
+  }
+  60% {
+    transform: translate(8px, 0px);
+  }
+  70% {
+    transform: translate(0px, 0px);
+  }
+  80% {
+    transform: translate(8px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes temblor {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(8px, 0px);
+  }
+  40% {
+    transform: translate(0px, 0px);
+  }
+  60% {
+    transform: translate(8px, 0px);
+  }
+  70% {
+    transform: translate(0px, 0px);
+  }
+  80% {
+    transform: translate(8px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+.cuadros .contenedor__menu {
+  width: auto;
+  background-color: #222;
+  border-radius: 20px;
+  border: red 2px solid;
+  color: white;
+  margin: 1.5em 0px 0px 0px;
+}
+.cuadros .contenedor__contacto {
+  width: auto;
+  background-color: #222;
+  border-radius: 20px;
+  border: red 2px solid;
+  color: white;
+  margin: 1em 0px 1em 0px;
+}/*# sourceMappingURL=styles.css.map */

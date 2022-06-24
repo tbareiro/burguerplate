@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+@import "../partials/colores";
+$rojo: map-get($colores, rojo);
+$bordo: map-get($colores, bordo);
+$blanco: map-get($colores, blanco);
+$dorado: map-get($colores, dorado);
+$gris: map-get($colores, gris);
+$negro: map-get($colores, negro);
+
+
+header{
+    background-color: #222;
+    border-bottom: solid 2px $rojo;
+
+    .logo{
+        width: 100px;  
+        transition: width 1s;
+        
+        &:hover{
+            width: 120px;
+        }
+    }
+
+    .nav-link{
+        color: $blanco;
+        font-weight: bolder;
+        
+        &:hover{
+            background-color: $rojo;
+            color: $blanco;
+            border-top: 3px $blanco solid;
+        }
+    }
+
+    strong {
+        @extend .nav-link;
+        background-color: $rojo;
+        border-top: 3px $blanco solid;
+    }
+
+
+    .navbar{
+        --bs-navbar-padding-y: 0;
+    }
+}

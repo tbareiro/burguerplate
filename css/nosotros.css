@@ -1,142 +1,117 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
 }
 
-/* Body Grid */
-header{
-    background-color: #222;
-    border-bottom: solid 2px red;
+header {
+  background-color: #222;
+  border-bottom: solid 2px red;
+}
+header .logo {
+  width: 100px;
+  transition: width 1s;
+}
+header .logo:hover {
+  width: 120px;
+}
+header .nav-link, header strong {
+  color: white;
+  font-weight: bolder;
+}
+header .nav-link:hover, header strong:hover {
+  background-color: red;
+  color: white;
+  border-top: 3px white solid;
+}
+header strong {
+  background-color: red;
+  border-top: 3px white solid;
+}
+header .navbar {
+  --bs-navbar-padding-y: 0;
 }
 
-.logo{
-    width: 100px;  
-    transition: width 1s;
+footer {
+  background-color: #222;
+}
+footer .redes a {
+  width: auto;
+  background-color: white;
+  border: solid 3px #990000;
+  border-radius: 20px;
+  margin: 4px;
+}
+footer .redes a:hover {
+  background-color: #990000;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+footer .numero {
+  width: auto;
+  background-color: white;
+  border: solid 3px #990000;
+  border-radius: 20px;
+  margin: 4px;
+  padding-right: 0.8em;
+}
+footer .numero:hover {
+  background-color: #990000;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+}
+footer .copyright {
+  font-weight: bolder;
+  margin: 4px;
+  color: rgb(196, 193, 193);
+}
+footer img.footer__logoRedes--size {
+  width: 2em;
+  margin: 0.5em;
+}
+footer img.footer__logoPagos--size {
+  width: 4em;
+  margin: 0.5em;
 }
 
-.logo:hover{
-    width: 120px;
+.messiB__img {
+  border-radius: 15px;
+  border: gold 3px solid;
 }
 
-.nav-link{
-    color: white;
-    font-weight: bolder;
+.us {
+  margin: 1em 0px;
 }
 
-.nav-link:hover{
-    background-color: red;
-    color: white;
-    border-top: 3px white solid;
+.burguerMessi {
+  margin: 1em 0px 1em;
+  padding: 0.8em;
+  background-color: #222;
+  border: red solid 3px;
+  border-radius: 20px;
+  color: white;
 }
 
-.navbar{
-    --bs-navbar-padding-y: 0;
+.text {
+  text-align: center;
+}
+.text h2 {
+  color: gold;
+  padding: 5px;
+}
+.text h3 {
+  padding: 4px;
+}
+.text p {
+  padding: 3px;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
-    color: white;
-    padding: 0.5em;
-    background-color: red;
-    border-top: solid 2px white;
-    font-weight: bolder;
+.video1 {
+  padding: 0.6em 0px 0.6em 0px;
 }
 
-/* Main */
-
-.messiB__img{
-    border-radius: 15px;
-    border: gold 3px solid;
-}
-
-.us{
-    margin: 1em 0px;
-}
-
-.burguerMessi{
-    margin: 1em 0px 1em;
-    padding: 0.8em;
-    background-color: #222;
-    border: red solid 3px;
-    border-radius: 20px;
-    color: white;
-}
-
-.text{
-    text-align: center;
-}
-
-.text h2{
-    color: gold;
-    padding: 5px;
-}
-
-.text h3{
-    padding: 4px;
-}
-
-.text p{
-    padding: 3px;
-}
-
-.video1{
-    padding: 0.6em 0px 0.6em 0px;
-}
-
-.link{
-    display: none;
-}
-
-/*Footer*/
-
-footer{
-    background-color: #222;
-}
-
-.redes a{
-    width: auto;
-    background-color: white;
-    border: solid 3px #990000;
-    border-radius: 20px;
-    margin: 4px;
-}
-
-.redes a:hover{
-    background-color: #990000;
-    border: 2px solid white;
-    border-radius: 20px;
-}
-
-.numero{
-    width: auto;
-    background-color: white;
-    border: solid 3px #990000;
-    border-radius: 20px;
-    margin: 4px;
-    padding-right: 0.8em;
-}
-
-.numero:hover{
-    background-color: #990000;
-    border: 2px solid white;
-    border-radius: 20px;
-    color: white;
-}
-
-.copyright{
-    font-weight: bolder;
-    margin: 4px;
-    color: rgb(196, 193, 193);
-}
-
-img.footer__logoRedes--size{
-    width: 2em;
-    margin: 0.5em;
-}
-
-
-img.footer__logoPagos--size{
-    width: 4em;
-    margin: 0.5em;
-}
+.link {
+  display: none;
+}/*# sourceMappingURL=nosotros.css.map */

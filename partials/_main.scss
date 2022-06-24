@@ -1,0 +1,84 @@
+@import "../partials/colores";
+$rojo: map-get($colores, rojo);
+$bordo: map-get($colores, bordo);
+$blanco: map-get($colores, blanco);
+$dorado: map-get($colores, dorado);
+$gris: map-get($colores, gris);
+$negro: map-get($colores, negro);
+
+section.welcome{
+    animation-iteration-count: 1;
+}
+
+.welcome__img{
+    position: relative;
+}
+
+.h1__welcome{
+    position: absolute;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2em;
+    left: 0.7em;
+    color: white;
+    -webkit-text-stroke: 1px $negro;
+}
+
+.img__welcome{
+    border-radius: 20px;
+}
+
+.cuadros{
+    width: 40vw;
+
+    & p{
+        font-weight: bolder;
+        -webkit-text-stroke: 1px $rojo;
+        margin-bottom: 0;
+        padding: 0.2em;
+    }
+    
+    & a{
+        text-decoration: none;
+        background-color: $blanco;
+        border: solid 2px $bordo;
+        color: $bordo;
+        padding: 8px;
+        border-radius: 20px;
+        
+        &:hover{
+            background-color: $bordo;
+            color: $blanco;
+            animation-name: temblor;
+            animation-duration: 1s;
+            
+        }    
+}
+
+@keyframes temblor{
+    0%{transform: translate(0px, 0px);}
+    20%{transform: translate(8px, 0px);}
+    40%{transform: translate(0px, 0px);}
+    60%{transform: translate(8px, 0px);}
+    70%{transform: translate(0px, 0px);}
+    80%{transform: translate(8px, 0px);}
+    100%{transform: translate(0px, 0px);}
+}
+
+@mixin contenedor ($margin) {
+    width: auto;
+    background-color: #222;
+    border-radius: 20px;
+    border: red 2px solid;
+    color: white;
+    margin: $margin;
+}
+
+.contenedor__menu{
+    @include contenedor(1.5em 0px 0px 0px);
+}
+
+.contenedor__contacto{
+    @include contenedor(1em 0px 1em 0px);
+}
+}
