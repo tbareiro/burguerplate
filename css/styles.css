@@ -7,7 +7,7 @@
 
 header {
   background-color: #222;
-  border-bottom: solid 2px red;
+  border-bottom: solid 2px #ff0000;
 }
 header .logo {
   width: 100px;
@@ -21,12 +21,12 @@ header .nav-link, header strong {
   font-weight: bolder;
 }
 header .nav-link:hover, header strong:hover {
-  background-color: red;
+  background-color: #ff0000;
   color: white;
   border-top: 3px white solid;
 }
 header strong {
-  background-color: red;
+  background-color: #ff0000;
   border-top: 3px white solid;
 }
 header .navbar {
@@ -104,7 +104,7 @@ section.welcome {
 }
 .cuadros p {
   font-weight: bolder;
-  -webkit-text-stroke: 1px red;
+  -webkit-text-stroke: 1px #ff0000;
   margin-bottom: 0;
   padding: 0.2em;
 }

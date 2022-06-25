@@ -76,42 +76,20 @@ footer img.footer__logoPagos--size {
   margin: 0.5em;
 }
 
-.messiB__img {
-  border-radius: 15px;
-  border: gold 3px solid;
-}
-
-.us {
-  margin: 1em 0px;
-}
-
-.burguerMessi {
-  margin: 1em 0px 1em;
-  padding: 0.8em;
+.gallery {
   background-color: #222;
-  border: #ff0000 solid 3px;
-  border-radius: 20px;
-  color: white;
+  border: solid 3px #F6CB1E;
 }
-
-.text {
-  text-align: center;
+.gallery img {
+  display: inline;
+  width: 40%;
+  margin: 1em;
+  height: auto;
+  border: solid 2px #F6CB1E;
+  filter: grayscale(1);
+  transition: width 1s;
 }
-.text h2 {
-  color: gold;
-  padding: 5px;
-}
-.text h3 {
-  padding: 4px;
-}
-.text p {
-  padding: 3px;
-}
-
-.video1 {
-  padding: 0.6em 0px 0.6em 0px;
-}
-
-.link {
-  display: none;
-}/*# sourceMappingURL=nosotros.css.map */
+.gallery img:hover {
+  width: 45%;
+  filter: grayscale(0);
+}/*# sourceMappingURL=fotos.css.map */

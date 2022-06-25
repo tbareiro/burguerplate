@@ -1,0 +1,31 @@
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/colores";
+$rojo: map-get($colores, rojo);
+$bordo: map-get($colores, bordo);
+$blanco: map-get($colores, blanco);
+$dorado: map-get($colores, dorado);
+$gris: map-get($colores, gris);
+$negro: map-get($colores, negro);
+
+.gallery{
+  background-color: #222;
+  border: solid 3px #F6CB1E;
+  
+  & img{
+    display: inline;
+    width: 40%;
+    margin: 1em;
+    height: auto;
+    border: solid 2px #F6CB1E;
+    filter: grayscale(1);
+    transition: width 1s;
+    
+    &:hover{
+      width: 45%;
+      filter: grayscale(0);
+    }
+  }
+}
+
+
