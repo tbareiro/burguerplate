@@ -1,0 +1,15 @@
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/colores";
+$rojo: map-get($colores, rojo);
+$bordo: map-get($colores, bordo);
+$blanco: map-get($colores, blanco);
+$dorado: map-get($colores, dorado);
+$gris: map-get($colores, gris);
+$negro: map-get($colores, negro);
+
+.bebidas{
+    background-color: $rojo;
+    color: $blanco;
+}
+

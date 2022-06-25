@@ -76,22 +76,7 @@ footer img.footer__logoPagos--size {
   margin: 0.5em;
 }
 
-.gallery {
-  background-color: #222;
-  border: solid 3px gold;
-}
-.gallery div {
-  display: inline-block;
-  margin: 0.1em;
-}
-.gallery div img {
-  width: auto;
-  height: 9.5em;
-  border: solid 2px gold;
-  filter: grayscale(1);
-  transition: height 0.8s, filter 0.6s;
-}
-.gallery div img:hover {
-  height: 10.5em;
-  filter: grayscale(0);
-}/*# sourceMappingURL=fotos.css.map */
+.bebidas {
+  background-color: #ff0000;
+  color: white;
+}/*# sourceMappingURL=menu.css.map */

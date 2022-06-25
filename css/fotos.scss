@@ -9,21 +9,24 @@ $gris: map-get($colores, gris);
 $negro: map-get($colores, negro);
 
 .gallery{
-  background-color: #222;
-  border: solid 3px #F6CB1E;
-  
-  & img{
-    display: inline;
-    width: 40%;
-    margin: 1em;
-    height: auto;
-    border: solid 2px #F6CB1E;
-    filter: grayscale(1);
-    transition: width 1s;
-    
-    &:hover{
-      width: 45%;
-      filter: grayscale(0);
+  background-color: $negro;
+  border: solid 3px $dorado;
+
+  & div{
+    display: inline-block;
+    margin: 0.1em;
+
+    & img{
+      width: auto;
+      height: 9.5em;
+      border: solid 2px $dorado;
+      filter: grayscale(1);
+      transition: height 0.8s, filter 0.6s;
+      
+      &:hover{
+        height: 10.5em;
+        filter: grayscale(0);
+      }
     }
   }
 }
