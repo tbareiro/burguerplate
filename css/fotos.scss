@@ -21,10 +21,10 @@ $negro: map-get($colores, negro);
       height: 9.5em;
       border: solid 2px $dorado;
       filter: grayscale(1);
-      transition: height 0.8s, filter 0.6s;
+      transition: all 0.6s;
       
       &:hover{
-        height: 10.5em;
+        transform: scale(1.1);
         filter: grayscale(0);
       }
     }

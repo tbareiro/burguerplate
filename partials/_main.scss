@@ -6,8 +6,21 @@ $dorado: map-get($colores, dorado);
 $gris: map-get($colores, gris);
 $negro: map-get($colores, negro);
 
-section.welcome{
-    animation-iteration-count: 1;
+.parrafo{
+    color: $bordo;
+
+    & h2{
+        font-size: 2.4em;
+    }
+
+    & p{
+        font-size: 1.2em;
+    }
+
+    & strong{
+        color: $negro;
+        font-size: 1.4em;
+    }
 }
 
 .welcome__img{
@@ -20,7 +33,7 @@ section.welcome{
     font-weight: bold;
     font-size: 2em;
     left: 0.7em;
-    color: white;
+    color: $blanco;
     -webkit-text-stroke: 1px $negro;
 }
 

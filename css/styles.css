@@ -76,9 +76,18 @@ footer img.footer__logoPagos--size {
   margin: 0.5em;
 }
 
-section.welcome {
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+.parrafo {
+  color: #990000;
+}
+.parrafo h2 {
+  font-size: 2.4em;
+}
+.parrafo p {
+  font-size: 1.2em;
+}
+.parrafo strong {
+  color: #222;
+  font-size: 1.4em;
 }
 
 .welcome__img {

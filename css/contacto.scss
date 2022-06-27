@@ -1,0 +1,34 @@
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/colores";
+$rojo: map-get($colores, rojo);
+$bordo: map-get($colores, bordo);
+$blanco: map-get($colores, blanco);
+$dorado: map-get($colores, dorado);
+$gris: map-get($colores, gris);
+$negro: map-get($colores, negro);
+
+.btn{
+    background-color: $rojo;
+    color: $blanco;
+
+    &:hover{
+        background-color: $blanco;
+        color: $rojo;
+    }
+}
+
+.secundario{
+    @extend .btn;
+    background-color: $bordo;
+
+    &:hover{
+        background-color: $bordo;
+        color: $negro;
+    }
+}
+
+form{
+    border-radius: 10px;
+    border: 2px solid $gris;
+}
