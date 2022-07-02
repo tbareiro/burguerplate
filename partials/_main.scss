@@ -80,10 +80,10 @@ $negro: map-get($colores, negro);
 
 @mixin contenedor ($margin) {
     width: auto;
-    background-color: #222;
+    background-color: $negro;
     border-radius: 20px;
-    border: red 2px solid;
-    color: white;
+    border: $rojo 2px solid;
+    color: $blanco;
     margin: $margin;
 }
 

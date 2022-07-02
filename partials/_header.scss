@@ -48,4 +48,9 @@ header{
     .navbar{
         --bs-navbar-padding-y: 0;
     }
+
+    .navbar-toggler{
+        background-color: $rojo;
+        margin-bottom: 10px;
+    }
 }
